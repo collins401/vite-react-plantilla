@@ -15,7 +15,7 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
-    "release": "standard-version --preset gitmoji-config"
+    "release": "standard-version"
   },
   "standard-version": {
     "skip": {
@@ -30,10 +30,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "node_modules/cz-customizable"
-    },
-    "cz-customizable": {
-      "config": "test.js"
+      "path": "node_modules/cz-conventional-changelog"
     }
   },
   "engines": {
@@ -72,14 +69,9 @@
     "@vitejs/plugin-legacy": "^1.7.1",
     "@vitejs/plugin-react": "^1.2.0",
     "c8": "^7.11.0",
-    "child_process": "^1.0.2",
-    "commitlint": "^16.2.1",
-    "commitlint-config-gitmoji": "^2.2.5",
     "consola": "^2.15.3",
     "conventional-changelog-cli": "^2.2.2",
-    "conventional-changelog-gitmoji-config": "^1.4.3",
     "cz-conventional-changelog": "^3.3.0",
-    "cz-customizable": "^6.3.0",
     "eslint": "^8.10.0",
     "eslint-config-alloy": "^4.5.1",
     "eslint-plugin-react": "^7.29.2",
