@@ -47,7 +47,7 @@ const SettingModal: SettingModalType = React.memo(() => {
   };
 
   function changeTheme(type: string, val: string) {
-    const cache = { ...settings };
+    const cache: any = { ...settings };
     cache[type] = val;
     dispath(updateSetting(cache));
   }
